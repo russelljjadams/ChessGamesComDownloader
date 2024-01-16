@@ -16,7 +16,7 @@ headers = {
 }
 
 # The initial URL that contains links to all the games
-collection_url = "https://www.chessgames.com/perl/chesscollection?cid=1032603"
+collection_url = "https://www.chessgames.com/perl/chesscollection?cid=1049411"
 
 # Function to extract game links from the collection page
 def get_game_links(collection_url):
@@ -51,7 +51,7 @@ def main():
             pgns.append(pgn)
     
     # Save all PGN data into a single file
-    pgn_filename = "rubinstein_move_by_move.pgn"
+    pgn_filename = "spasskys_best_games.pgn"
     with open(pgn_filename, 'w') as pgn_file:
         for pgn in pgns:
             pgn_file.write(pgn + '\n\n')
